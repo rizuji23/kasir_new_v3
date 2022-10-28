@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Cozypool Kasir</title>
+    <link rel="stylesheet" href="../public/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/assets/css/style.css">
+    <link rel="stylesheet" href="../public/assets/css/boxicons.min.css">
+    <link rel="stylesheet" href="../public/assets/css/dataTables.bootstrap5.min.css">
+
+</head>
+
+<body id="body-pd" class="body-pd">
+    <div class="overlay">
+        <div class="overlay__inner">
+            <div class="overlay__content text-center"><img src="../public/assets/img/logo-login.png" alt=""></span>
+                <h3>Tunggu sebentar, menyiapkan table...</h3>
+            </div>
+
+        </div>
+    </div>
+    <header class="header body-pd" id="header">
+        <div class="header-phone">
+            <img src="../public/assets/img/logo.png" alt="">
+        </div>
+        <div class="header_img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <img src="../public/assets/img/user.png" alt="">
+            <p class="header-name">Aye Shabira</p>
+        </div>
+    </header>
+    <div class="l-navbar show-sidebar" id="nav-bar">
+        <nav class="nav">
+            <div>
+                <a href="#" class="nav_logo">
+                    <span class="nav_logo-name"><img src="../public/assets/img/logo.png" alt=""></span>
+                </a>
+                <div class="nav_list">
+                    <a href="home.html" class="nav_link active" title="Home">
+                        <i class='bx bx-home-alt nav_icon'></i>
+                        <span class="nav_name">Home</span>
+                    </a>
+                    <a href="waiting_list.html" class="nav_link" title="Waiting List">
+                        <i class='bx bx-list-plus nav_icon'></i>
+                        <span class="nav_name">Waiting List</span>
+                    </a>
+                    <a href="add_member.html" class="nav_link" title="Add Member">
+                        <i class='bx bx-user-plus nav_icon'></i>
+                        <span class="nav_name">Add Member</span>
+                    </a>
+
+                    <a href="menu.html" class="nav_link" title="Menu Makanan">
+                        <i class='bx bx-bowl-rice nav_icon'></i>
+                        <span class="nav_name">Menu Makanan</span>
+                    </a>
+<a href="menu_cafe.html" class="nav_link" title="Menu Cafe">
+                        <i class='bx bx-baguette nav_icon'></i>
+                        <span class="nav_name">Menu Cafe</span>
+                    </a>
+<a href="manual.html" class="nav_link" title="Manual">
+                        <i class='bx bx-desktop nav_icon'></i>
+                        <span class="nav_name">Manual Lampu</span>
+                    </a>
+
+                    <a href="pengaturan.html" class="nav_link" title="Pengaturan">
+                        <i class='bx bx-cog nav_icon'></i>
+                        <span class="nav_name">Pengaturan</span>
+                    </a>
+                </div>
+            </div>
+            <a href="javascript:void(0)" class="nav_link" title="Logout" id="logout-side">
+                <i class='bx bx-log-out nav_icon'></i>
+                <span class="nav_name">Logout</span>
+            </a>
+        </nav>
+    </div>
+
+    <!-- <nav class="navbar fixed-bottom bg-dark navbar-mobile">
+        <div class="container-fluid">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item text-center">
+                    <a href="home.html" class="nav-bottom-link active-2" title="Home">
+                        <i class='bx bx-home-alt nav_icon'></i>
+                        <p class="nav_name_bottom">Home</p>
+                    </a>
+                </li>
+                <li class="nav-item text-center">
+                    <a href="keuangan.html" class="nav-bottom-link" title="Keuangan">
+                        <i class='bx bx-archive nav_icon'></i>
+                        <p class="nav_name_bottom">Keuangan</p>
+                    </a>
+                </li>
+                <li class="nav-item text-center">
+                    <a href="report.html" class="nav-bottom-link" title="Report">
+                        <i class='bx bx-chart nav_icon'></i>
+                        <p class="nav_name_bottom">Report</p>
+                    </a>
+                </li>
+                <li class="nav-item text-center" style="padding-right: 54px !important;">
+                    <a href="settings.html" class="nav-bottom-link" title="Settings">
+                        <i class='bx bx-brightness nav_icon'></i>
+                        <p class="nav_name_bottom">Settings</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav> -->
+
+    <!--Container Main start-->
+    <div class="box-bg">
+        <div class="overview-pemb mb-5">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="d-flex mb-2">
+                        <div class="p-1">
+                            <a href="home.html"
+                                class="btn btn-primary btn-primary-cozy-dark btn-home-top border-r-13 pl-20 pr-20 pt-10 pb-10">Home</a>
+                        </div>
+
+                        <div class="p-1">
+                            <a href="list_member.html"
+                                class="btn btn-primary btn-primary-cozy btn-home-top border-r-13 pl-20 pr-20 pt-10 pb-10">List
+                                Member</a>
+                        </div>
+
+                        <div class="p-1">
+                            <a href="list_transaksi.html"
+                                class="btn btn-primary btn-primary-cozy-dark btn-home-top border-r-13 pl-20 pr-20 pt-10 pb-10">List
+                                Transaksi</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="d-flex mb-2 float-end">
+                        <div class="p-1">
+                            <a href="javascript:void(0)"
+                                class="btn btn-primary btn-primary-cozy border-r-13 pl-20 pr-20 pt-10 pb-10"
+                                id="refresh_page"><img src="../public/assets/img/icon/refresh-ccw.png" alt=""></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="keuangan-list mt-2 mb-5">
+            <div class="card card-custom-dark">
+                <div class="card-header">
+                    <div class="d-flex">
+                        <div class="p-2 w-100">
+                            <h4>List Member</h4>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table id="member-table" class="table" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th style="width: 20px;">No</th>
+                                    <th>Kode Member</th>
+                                    <th>Nama</th>
+                                    <th>No Telp</th>
+                                    <th style="width: 150px;">Tipe Member</th>
+                                    <th>Opsi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--Container Main end-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Profile</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="list-group">
+                        <a href="updateProfile.html" class="list-group-item list-group-item-action">Edit Profit</a>
+                        <a href="javascript:void(0)" class="list-group-item list-group-item-action" id="logout">Logout</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="detailMember" tabindex="-1" aria-labelledby="detailMemberLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="detailMemberLabel">Detail Member</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-group" id="detail_member">
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="editMember" tabindex="-1" aria-labelledby="editMemberLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editMemberLabel">Edit Member</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" id="id_member">
+                    <div class="mt-3">
+                        <label for="usr">Nama lengkap</label>
+                        <input type="text" class="form-control custom-input mt-2" id="nama_lengkap_member" class="usr">
+                    </div>
+                    <div class="mt-3">
+                        <label for="usr">Nomor telepon</label>
+                        <input type="number" class="form-control custom-input mt-2" id="no_telp_member" class="usr">
+                    </div>
+                    <div class="mt-3">
+                        <label for="usr">Email</label>
+                        <input type="email" class="form-control custom-input mt-2" id="email_member" class="usr">
+                    </div>
+                    <div class="mt-3">
+                        <label for="usr">Alamat Lengkap</label>
+                        <input type="text" class="form-control custom-input mt-2" id="alamat_member" class="usr">
+                    </div>
+                    <div class="mt-3">
+                        <label for="usr">No. KTP</label>
+                        <input type="number" class="form-control custom-input mt-2" id="no_ktp_member" class="usr">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-primary-cozy-dark"
+                        data-bs-dismiss="modal">Close</button>
+                    <button class="btn btn-primary btn-primary-cozy" id="edit_member">Edit Member</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    if (typeof module === 'object') {
+        window.module = module;
+        module = undefined;
+    }
+</script>
+<script src="../public/assets/js/jquery-3.6.0.min.js"></script>
+<script src="../public/assets/js/popper.min.js"></script>
+<script src="../public/assets/js/bootstrap.min.js"></script>
+<script src="../public/assets/js/scripts.js"></script>
+<script src="../public/assets/js/jquery.dataTables.min.js"></script>
+<script src="../public/assets/js/dataTables.bootstrap5.min.js"></script>
+
+<script>
+    if (window.module) module = window.module;
+</script>
+<script src="../renderer.js"></script>
+<script>
+    var t = $('#member-table').DataTable();
+
+    ipcRenderer.invoke('executeQuery', "SELECT * FROM member", "all", []).then((result) => {
+        let i = 1;
+        var html = ``;
+        result.forEach((row) => t.row.add([
+            i++,
+            row[2],
+            row[3],
+            row[4],
+            row[8],
+            `<button class="btn btn-primary btn-primary-cozy btn-sm" onclick="detailMember('` + row[
+                1] +
+            `')">Detail</button>
+                                        <button class="btn btn-primary btn-primary-cozy-dark btn-sm" onclick="editMember('` +
+            row[
+                1] +
+            `')">Edit</button>
+                                        <button class="btn btn-primary btn-danger-cozy btn-sm" onclick="deleteMember('` +
+            row[
+                1] + `')">Delete</button>`
+        ]).draw(false))
+    })
+
+    function detailMember(id_member) {
+        try {
+            ipcRenderer.invoke('executeQuery', "SELECT * FROM member WHERE id_member = ?", 1, [id_member]).then((
+                result) => {
+                console.log(result)
+                const date = new Date(result[0][11]);
+                const data = `<li class="list-group-item"><small>Kode Member</small> <br>` + result[0][2] + `</li>
+                        <li class="list-group-item"><small>Nama</small> <br>` + result[0][3] + `</li>
+                        <li class="list-group-item"><small>No Telp</small> <br>` + result[0][4] + `</li>
+                        <li class="list-group-item"><small>Email</small> <br>` + result[0][5] + `</li>
+                        <li class="list-group-item"><small>No KTP</small> <br>` + result[0][6] + `</li>
+                        <li class="list-group-item"><small>Alamat</small> <br>` + result[0][7] + `</li>
+                        <li class="list-group-item"><small>Tipe Member</small> <br>` + result[0][8] + `</li>
+                        <li class="list-group-item"><small>Tanggal Pembuatan</small> <br>` + date
+                    .toLocaleDateString() + `</li>`
+                $('#detail_member').html(data);
+                $('#detailMember').modal('show')
+
+            })
+        } catch (error) {
+            console.log(error);
+        }
+
+    }
+
+    function editMember(id_member) {
+        try {
+            ipcRenderer.invoke('executeQuery', "SELECT * FROM member WHERE id_member = ?", 1, [id_member]).then((
+                result) => {
+                console.log(result)
+                $("#nama_lengkap_member").val(result[0][3]);
+                $("#no_telp_member").val(result[0][4]);
+                $("#email_member").val(result[0][5]);
+                $("#alamat_member").val(result[0][7]);
+                $("#no_ktp_member").val(result[0][6]);
+                $('#id_member').val(id_member)
+
+                $('#editMember').modal('show')
+
+            })
+        } catch (error) {
+            console.log(error);
+        }
+
+    }
+
+    $('#edit_member').click(() => {
+        const nama_lengkap = $("#nama_lengkap_member").val();
+        const no_telp = $("#no_telp_member").val();
+        const email = $("#email_member").val();
+        const alamat = $("#alamat_member").val();
+        const no_ktp = $("#no_ktp_member").val();
+        const id_member = $('#id_member').val()
+
+        try {
+            ipcRenderer.invoke('executeQuery',
+                'UPDATE member SET nama_member = ?, no_telp = ?, email = ?, no_ktp = ? WHERE id_member = ?',
+                1,
+                [nama_lengkap,
+                    no_telp, email, no_ktp, id_member
+                ]).then((result) => {
+                console.log(result)
+                Swal.fire({
+                    title: "Berhasil",
+                    text: "Member berhasil diedit",
+                    icon: "success",
+                    confirmButtonText: "Oke",
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        document.location.reload()
+                    }
+                });
+            })
+        } catch (error) {
+            console.log(error);
+        }
+    })
+
+    function deleteMember(id_member) {
+        Swal.fire({
+            title: "Apakah ingin dihapus?",
+            text: "Data tidak akan kembali semula.",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Iya",
+        }).then((result) => {
+            if (result.isConfirmed) {
+                try {
+                    ipcRenderer.invoke('executeQuery', "DELETE FROM member WHERE id_member = ?", 1, [id_member])
+                        .then((result) => {
+                            Swal.fire({
+                                title: "Berhasil",
+                                text: "Member berhasil dihapus",
+                                icon: "success",
+                                confirmButtonText: "Oke",
+                            }).then((result) => {
+                                if (result.isConfirmed) {
+                                    document.location.reload()
+                                }
+                            });
+                        })
+                } catch (error) {
+                    console.log(error);
+                }
+            }
+        })
+    }
+</script>
+
+</html>

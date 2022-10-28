@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Cozypool Kasir</title>
+    <link rel="stylesheet" href="../public/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/assets/css/style.css">
+    <link rel="stylesheet" href="../public/assets/css/boxicons.min.css">
+</head>
+
+<body id="body-pd">
+    <!--Container Main start-->
+
+
+    <div class="login-box">
+        <div class="login-logo text-center mb-3">
+            <img src="../public/assets/img/logo-login.png" alt="">
+        </div>
+        <div class="card card-custom-dark">
+            <div class="card-body">
+                <div class="title-report text-center">
+                    <h4>Login</h4>
+                </div>
+                <div class="pl-20 pr-20">
+                    <div class="">
+                        <div class="form-group">
+                            <label for="usr">Username</label>
+                            <input type="text" class="form-control custom-input" id="username" class="usr">
+                        </div>
+                        <div class="form-group">
+                            <label for="usr">Password</label>
+                            <input type="password" class="form-control custom-input" id="password" class="usr">
+                        </div>
+
+                    </div>
+                    <div class="d-grid mt-3">
+                        <a href="javascript:void(0)" id="login"
+                            class="btn btn-primary btn-primary-cozy d-block">Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Container Main end-->
+
+</body>
+<script>
+    if (typeof module === 'object') {
+        window.module = module;
+        module = undefined;
+    }
+</script>
+<script src="../public/assets/js/jquery-3.6.0.min.js"></script>
+<script src="../public/assets/js/bootstrap.min.js"></script>
+<script src="../public/assets/js/scripts.js"></script>
+<script>
+    if (window.module) module = window.module;
+</script>
+<script src="../auth.js"></script>
+
+</html>

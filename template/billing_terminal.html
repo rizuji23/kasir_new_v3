@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Makanan | Cozypool Kasir</title>
+    <link rel="stylesheet" href="../public/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/assets/css/style.css">
+    <link rel="stylesheet" href="../public/assets/css/boxicons.min.css">
+    <style>
+        .terminal {
+            background-color: black;
+            color: white;
+            height: 500px;
+            border-radius: 10px;
+            overflow: auto;
+            padding: 20px;
+        }
+
+        .terminal .terminal-body p {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body id="body-pd" class="body-pd">
+    <div class="overlay2" id="overlay">
+        <div class="overlay__inner2">
+            <div class="overlay__content2 text-center"><img src="../public/assets/img/logo-login.png" alt=""></span>
+                <h3>Load checkout...</h3>
+            </div>
+
+        </div>
+    </div>
+    <header class="header body-pd" id="header">
+        <div class="header-phone">
+            <img src="../public/assets/img/logo.png" alt="">
+        </div>
+        <div class="header_img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <img src="../public/assets/img/user.png" alt="">
+            <p class="header-name">Aye Shabira</p>
+        </div>
+    </header>
+    <div class="l-navbar show-sidebar" id="nav-bar">
+        <nav class="nav">
+            <div>
+                <a href="#" class="nav_logo">
+                    <span class="nav_logo-name"><img src="../public/assets/img/logo.png" alt=""></span>
+                </a>
+                <div class="nav_list">
+                    <a href="home.html" class="nav_link active" title="Home">
+                        <i class='bx bx-home-alt nav_icon'></i>
+                        <span class="nav_name">Home</span>
+                    </a>
+                    <a href="waiting_list.html" class="nav_link" title="Waiting List">
+                        <i class='bx bx-list-plus nav_icon'></i>
+                        <span class="nav_name">Waiting List</span>
+                    </a>
+                    <a href="add_member.html" class="nav_link" title="Add Member">
+                        <i class='bx bx-user-plus nav_icon'></i>
+                        <span class="nav_name">Add Member</span>
+                    </a>
+
+                    <a href="menu.html" class="nav_link " title="Menu Makanan">
+                        <i class='bx bx-bowl-rice nav_icon'></i>
+                        <span class="nav_name">Menu Makanan</span>
+                    </a>
+
+                    <a href="menu_cafe.html" class="nav_link" title="Menu Cafe">
+                        <i class='bx bx-baguette nav_icon'></i>
+                        <span class="nav_name">Menu Cafe</span>
+                    </a>
+                    <a href="manual.html" class="nav_link" title="Manual">
+                        <i class='bx bx-desktop nav_icon'></i>
+                        <span class="nav_name">Manual Lampu</span>
+                    </a>
+
+                    <a href="pengaturan.html" class="nav_link" title="Pengaturan">
+                        <i class='bx bx-cog nav_icon'></i>
+                        <span class="nav_name">Pengaturan</span>
+                    </a>
+
+                </div>
+            </div>
+            <a href="javascript:void(0)" class="nav_link" title="Logout" id="logout-side">
+                <i class='bx bx-log-out nav_icon'></i>
+                <span class="nav_name">Logout</span>
+            </a>
+        </nav>
+    </div>
+
+    <!-- <nav class="navbar fixed-bottom bg-dark navbar-mobile">
+        <div class="container-fluid">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item text-center">
+                    <a href="home.html" class="nav-bottom-link active-2" title="Home">
+                        <i class='bx bx-home-alt nav_icon'></i>
+                        <p class="nav_name_bottom">Home</p>
+                    </a>
+                </li>
+                <li class="nav-item text-center">
+                    <a href="keuangan.html" class="nav-bottom-link" title="Keuangan">
+                        <i class='bx bx-archive nav_icon'></i>
+                        <p class="nav_name_bottom">Keuangan</p>
+                    </a>
+                </li>
+                <li class="nav-item text-center">
+                    <a href="report.html" class="nav-bottom-link" title="Report">
+                        <i class='bx bx-chart nav_icon'></i>
+                        <p class="nav_name_bottom">Report</p>
+                    </a>
+                </li>
+                <li class="nav-item text-center" style="padding-right: 54px !important;">
+                    <a href="settings.html" class="nav-bottom-link" title="Settings">
+                        <i class='bx bx-brightness nav_icon'></i>
+                        <p class="nav_name_bottom">Settings</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav> -->
+
+    <!--Container Main start-->
+    <div class="box-bg">
+        <div class="d-flex mb-2">
+            <div class="p-1">
+                <a href="home.html" class=""><img src="../public/assets/img/icon/back.png" alt=""></a>
+            </div>
+            <div class="p-1">
+                <div class="title-header-box">
+                    <h3>Kembali</h3>
+                </div>
+            </div>
+        </div>
+        <div class="terminal">
+            <div class="terminal-body" id="billing_handle">
+
+
+            </div>
+        </div>
+
+    </div>
+    <!--Container Main end-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Profile</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="list-group">
+                        <a href="updateProfile.html" class="list-group-item list-group-item-action">Edit Profit</a>
+                        <a href="javascript:void(0)" class="list-group-item list-group-item-action" id="logout">Logout</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script>
+    if (typeof module === 'object') {
+        window.module = module;
+        module = undefined;
+    }
+</script>
+<script src="../public/assets/js/jquery-3.6.0.min.js"></script>
+<script src="../public/assets/js/popper.min.js"></script>
+<script src="../public/assets/js/bootstrap.min.js"></script>
+<script src="../public/assets/js/scripts.js"></script>
+<script>
+    if (window.module) module = window.module;
+</script>
+<script src="../renderer.js"></script>
+<script src="../menu.js"></script>
+<script>
+
+</script>
+
+</html>

@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Cafe Stok | Cozypool Kasir</title>
+    <link rel="stylesheet" href="../public/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/assets/css/style.css">
+    <link rel="stylesheet" href="../public/assets/css/boxicons.min.css">
+    <link rel="stylesheet" href="../public/assets/css/dataTables.bootstrap5.min.css">
+
+</head>
+
+<body id="body-pd" class="body-pd">
+    <div class="overlay">
+        <div class="overlay__inner">
+            <div class="overlay__content text-center"><img src="../public/assets/img/logo-login.png" alt=""></span>
+                <h3>Tunggu sebentar, menyiapkan table...</h3>
+            </div>
+
+        </div>
+    </div>
+    <header class="header body-pd" id="header">
+        <div class="header-phone">
+            <img src="../public/assets/img/logo.png" alt="">
+        </div>
+        <div class="header_img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <img src="../public/assets/img/user.png" alt="">
+            <p class="header-name">Aye Shabira</p>
+        </div>
+    </header>
+    <div class="l-navbar show-sidebar" id="nav-bar">
+        <nav class="nav">
+            <div>
+                <a href="#" class="nav_logo">
+                    <span class="nav_logo-name"><img src="../public/assets/img/logo.png" alt=""></span>
+                </a>
+                <div class="nav_list">
+                    <a href="home.html" class="nav_link active" title="Home">
+                        <i class='bx bx-home-alt nav_icon'></i>
+                        <span class="nav_name">Home</span>
+                    </a>
+                    <a href="waiting_list.html" class="nav_link" title="Waiting List">
+                        <i class='bx bx-list-plus nav_icon'></i>
+                        <span class="nav_name">Waiting List</span>
+                    </a>
+                    <a href="add_member.html" class="nav_link" title="Add Member">
+                        <i class='bx bx-user-plus nav_icon'></i>
+                        <span class="nav_name">Add Member</span>
+                    </a>
+
+                    <a href="menu.html" class="nav_link" title="Menu Makanan">
+                        <i class='bx bx-bowl-rice nav_icon'></i>
+                        <span class="nav_name">Menu Makanan</span>
+                    </a>
+                    <a href="menu_cafe.html" class="nav_link" title="Menu Cafe">
+                        <i class='bx bx-baguette nav_icon'></i>
+                        <span class="nav_name">Menu Cafe</span>
+                    </a>
+                    <a href="manual.html" class="nav_link" title="Manual">
+                        <i class='bx bx-desktop nav_icon'></i>
+                        <span class="nav_name">Manual Lampu</span>
+                    </a>
+
+                    <a href="pengaturan.html" class="nav_link" title="Pengaturan">
+                        <i class='bx bx-cog nav_icon'></i>
+                        <span class="nav_name">Pengaturan</span>
+                    </a>
+                </div>
+            </div>
+            <a href="javascript:void(0)" class="nav_link" title="Logout" id="logout-side">
+                <i class='bx bx-log-out nav_icon'></i>
+                <span class="nav_name">Logout</span>
+            </a>
+        </nav>
+    </div>
+
+    <!-- <nav class="navbar fixed-bottom bg-dark navbar-mobile">
+        <div class="container-fluid">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item text-center">
+                    <a href="home.html" class="nav-bottom-link active-2" title="Home">
+                        <i class='bx bx-home-alt nav_icon'></i>
+                        <p class="nav_name_bottom">Home</p>
+                    </a>
+                </li>
+                <li class="nav-item text-center">
+                    <a href="keuangan.html" class="nav-bottom-link" title="Keuangan">
+                        <i class='bx bx-archive nav_icon'></i>
+                        <p class="nav_name_bottom">Keuangan</p>
+                    </a>
+                </li>
+                <li class="nav-item text-center">
+                    <a href="report.html" class="nav-bottom-link" title="Report">
+                        <i class='bx bx-chart nav_icon'></i>
+                        <p class="nav_name_bottom">Report</p>
+                    </a>
+                </li>
+                <li class="nav-item text-center" style="padding-right: 54px !important;">
+                    <a href="settings.html" class="nav-bottom-link" title="Settings">
+                        <i class='bx bx-brightness nav_icon'></i>
+                        <p class="nav_name_bottom">Settings</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav> -->
+
+    <!--Container Main start-->
+    <div class="box-bg">
+        <div class="overview-pemb mb-1">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="d-flex mb-2">
+                        <div class="p-1">
+                            <a href="home.html"
+                                class="btn btn-primary btn-primary-cozy-dark btn-home-top border-r-13 pl-20 pr-20 pt-10 pb-10">Home</a>
+                        </div>
+
+                        <div class="p-1">
+                            <a href="list_member.html"
+                                class="btn btn-primary btn-primary-cozy-dark btn-home-top border-r-13 pl-20 pr-20 pt-10 pb-10">List
+                                Member</a>
+                        </div>
+
+                        <div class="p-1">
+                            <a href="list_transaksi.html"
+                                class="btn btn-primary btn-primary-cozy btn-home-top border-r-13 pl-20 pr-20 pt-10 pb-10">List
+                                Transaksi</a>
+                        </div>
+
+                        <div class="p-1">
+                            <a href="list_transaksi_shift.html"
+                                class="btn btn-primary btn-primary-cozy-dark btn-home-top border-r-13 pl-20 pr-20 pt-10 pb-10">List
+                                Transaksi Shift</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="d-flex mb-2 float-end">
+                        <div class="p-1">
+                            <a href="javascript:void(0)"
+                                class="btn btn-primary btn-primary-cozy border-r-13 pl-20 pr-20 pt-10 pb-10"
+                                id="refresh_page"><img src="../public/assets/img/icon/refresh-ccw.png" alt=""></a>
+                        </div>
+                        <div class="p-1">
+                            <a href="javascript:void(0)"
+                                class="btn btn-primary btn-primary-cozy border-r-13 pl-20 pr-20 pt-10 pb-10"
+                                data-bs-toggle="modal" data-bs-target="#print_transaksi_modal">Print
+                                Stok Item</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hr-white"></div>
+        <div class="d-flex mb-2">
+            <div class="p-1">
+                <a href="list_transaksi.html"
+                    class="btn btn-primary btn-primary-cozy-dark btn-home-top border-r-13 pl-20 pr-20 pt-10 pb-10">
+                    Transaksi Billing</a>
+            </div>
+
+            <div class="p-1">
+                <a href="list_cafe.html"
+                    class="btn btn-primary btn-primary-cozy-dark btn-home-top border-r-13 pl-20 pr-20 pt-10 pb-10">
+                    Transaksi Cafe</a>
+            </div>
+
+            <div class="p-1">
+                <a href="list_stok_cafe.html"
+                    class="btn btn-primary btn-primary-cozy btn-home-top border-r-13 pl-20 pr-20 pt-10 pb-10">
+                    Cafe Stok</a>
+            </div>
+
+            <div class="p-1">
+                <a href="list_stok_masuk.html"
+                    class="btn btn-primary btn-primary-cozy-dark btn-home-top border-r-13 pl-20 pr-20 pt-10 pb-10">
+                    Stok Masuk</a>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- <div class="col-sm">
+                <div class="card card-custom">
+                    <div class="card-body">
+                        <div class="title-pemb">
+                            <h4>Total stok keluar hari ini:</h4>
+                            <h4><span id="total_hari_stok"></span></h4>
+                            <p id="date_locale_stok"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card card-custom" style="background-color: #1A1B1F !important;">
+                    <div class="card-body">
+                        <div class="title-pemb">
+                            <h4>Total stok keluar bulan ini:</h4>
+                            <h4><span id="total_bulan_stok"></span></h4>
+                            <p id="date_locale_bulan_stok"></p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <div class="keuangan-list mt-2 mb-5">
+            <div class="card card-custom-dark">
+                <div class="card-header">
+                    <div class="d-flex">
+                        <div class="p-2 me-auto">
+                            <h4>List Stok Keluar Semua</h4>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table id="stok-table" class="table" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th style="width: 20px;">No</th>
+                                    <th>Nama</th>
+                                    <th>Terjual</th>
+                                    <th>Pendapatan</th>
+                                    <th>Modal</th>
+                                    <th>Keuntungan</th>
+                                    <th>Shift</th>
+                                    <th>Tanggal</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Container Main end-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Profile</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">Logout</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="detailCafe" tabindex="-1" aria-labelledby="detailCafeLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="detailCafeLabel">Detail Stok</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-group" id="detail_member"></ul>
+                    <ul class="list-group mt-3" id="detail_transaksi_list">
+                        <li class="list-group-item"><small>List Transaksi</small> <br>
+                            <ul>
+                                <div id="list_billing_t"></div>
+                                <div class="list_menu_t"></div>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="print_transaksi_modal" tabindex="-1" aria-labelledby="print_transaksi_modalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="print_transaksi_modalLabel">Print Stok Item</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mt-2">
+                        <label for="">Tanggal</label>
+                        <input type="date" class="form-control custom-input mt-2" id="tanggal_print_transaksi">
+                    </div>
+
+                    <div class="mt-2">
+                        <label for="">Shift</label>
+                        <select name="" class="form-control custom-input mt-2" id="shift_tipe">
+                            <option value="Siang">Siang</option>
+                            <option value="Malam">Malam</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-primary-cozy-dark"
+                        data-bs-dismiss="modal">Batal</button>
+                    <button type="button" class="btn btn-primary btn-primary-cozy"
+                        id="print_transaksi_btn">Print</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script>
+    if (typeof module === 'object') {
+        window.module = module;
+        module = undefined;
+    }
+</script>
+<script src="../public/assets/js/jquery-3.6.0.min.js"></script>
+<script src="../public/assets/js/popper.min.js"></script>
+<script src="../public/assets/js/bootstrap.min.js"></script>
+<script src="../public/assets/js/scripts.js"></script>
+<script src="../public/assets/js/jquery.dataTables.min.js"></script>
+<script src="../public/assets/js/dataTables.bootstrap5.min.js"></script>
+
+<script>
+    if (window.module) module = window.module;
+</script>
+<script src="../renderer.js"></script>
+<script>
+    var t_stok = $('#stok-table').DataTable();
+    const date = new Date();
+
+    try {
+        const date_now = new Date().toLocaleDateString('fr-CA');
+        var sum_all = 0
+        console.log(date_now)
+        ipcRenderer.invoke('executeQuery',
+                "SELECT COUNT(1) AS sb FROM stok_barang INNER JOIN menu ON stok_barang.id_menu = menu.id_menu WHERE date(stok_barang.created_at) = ? ORDER BY stok_barang.id DESC",
+                'all', [
+                    date_now
+                ])
+            .then((result) => {
+                console.log(result)
+                $('#total_hari_stok').text(result[0][0])
+                $('#date_locale_stok').text(date_now)
+            })
+    } catch (error) {
+        console.log(error);
+    }
+
+    try {
+        var sum_all_bulan = 0
+        const date_month = ("0" + (new Date().getMonth() + 1)).slice(-2)
+        const date_year = new Date().getFullYear()
+        const date_now = `${date_year}-${date_month}`
+        console.log()
+        ipcRenderer.invoke('executeQuery',
+                "SELECT COUNT(1) AS sb FROM stok_barang INNER JOIN menu ON stok_barang.id_menu = menu.id_menu WHERE strftime('%Y-%m', stok_barang.created_at) = ? ORDER BY stok_barang.id DESC",
+                "all", [
+                    date_now
+                ])
+            .then((result) => {
+                console.log()
+
+                $('#total_bulan_stok').text(result[0][0])
+                $('#date_locale_bulan_stok').text("Bulan ke " + date_month)
+            })
+    } catch (error) {
+        console.log(error)
+    }
+
+
+    try {
+        // ipcRenderer.invoke("executeQuery",
+        //     "SELECT strftime('%Y-%m-%d', stok_barang.created_at) AS date_now, SUM(terjual) AS tj, (stok_barang.sisa + stok_barang.terjual) AS stok_awal, (stok_barang.stok_awal - SUM(stok_barang.terjual)) AS stok_akhir, stok_barang.id_menu, stok_barang.created_at, menu.id_menu, menu.nama_menu, stok_barang.shift FROM stok_barang INNER JOIN menu ON stok_barang.id_menu = menu.id_menu GROUP BY menu.nama_menu, stok_barang.shift",
+        //     'all', [
+
+        //     ]).then((result) => {
+        //     console.log(result)
+        //     var i = 1;
+        //     result.forEach((row) => {
+        //         const date = new Date(row[5]);
+        //         const curHr = date.getHours();
+        //         var shift = "";
+        //         if (curHr <= 16) {
+        //             shift = "siang";
+        //         } else if (curHr >= 16) {
+        //             shift = "malam";
+        //         }
+        //         t_stok.row.add([
+        //             i++,
+        //             row[7],
+        //             `${row[1]}`,
+        //             `${row[8]}`,
+        //             `${new Date(row[5]).toLocaleDateString('es-Cl')} ${new Date(row[5]).toLocaleTimeString('es-Cl')}`,
+        //             `${new Date(row[5]).toLocaleDateString('es-CL')}`,
+
+        //         ]).draw(false)
+        //     })
+        // })
+
+        ipcRenderer.invoke("executeQuery",
+            "SELECT *, SUM(terjual) as tj, (menu.harga_menu * SUM(terjual)) AS pendapatan, (detail_cafe.modal * SUM(terjual)) AS modal, (detail_cafe.keuntungan * SUM(terjual)) AS keuntungan, strftime('%Y-%m-%d', stok_barang.created_at) AS date_now FROM stok_barang INNER JOIN menu ON stok_barang.id_menu = menu.id_menu INNER JOIN detail_cafe ON menu.id_menu = detail_cafe.id_menu  GROUP BY menu.id_menu, date_now, stok_barang.shift ORDER BY stok_barang.id DESC",
+            'all', []).then((
+            result) => {
+            console.log(result)
+            var i = 1;
+            result.forEach((row) => {
+                t_stok.row.add([
+                    i++,
+                    row[13],
+                    `${row[27]}`,
+                    `Rp. ${(row[28] == null ? 0 : formatRupiah(row[28]))}`,
+                    `Rp. ${(row[29] == null ? 0 : formatRupiah(row[29]))}`,
+                    `Rp. ${(row[30] == null ? 0 : formatRupiah(row[30]))}`,
+                    `${row[7]}`,
+                    `${new Date(row[10]).toLocaleDateString('es-Cl')} ${new Date(row[10]).toLocaleTimeString('es-Cl')}`,
+                    `${new Date(row[10]).toLocaleDateString('es-CL')}`,
+
+                ]).draw(false)
+            })
+        })
+
+
+
+    } catch (error) {
+        console.log(error)
+    }
+
+    $("#print_transaksi_btn").click(() => {
+        const tanggal_print_transaksi = $("#tanggal_print_transaksi").val();
+        const tipe_print = 'PDF'
+        const shift_tipe = $("#shift_tipe").val();
+
+        if (tipe_print == 'PDF') {
+            const date_now = new Date(tanggal_print_transaksi).toLocaleDateString('fr-CA');
+            const shift_lower = shift_tipe.toLowerCase();
+            console.log(date_now)
+            try {
+                ipcRenderer.invoke("executeQuery",
+                    "SELECT strftime('%Y-%m-%d', stok_barang.created_at) AS date_now, SUM(terjual) AS tj, (stok_barang.sisa + stok_barang.terjual) AS stok_awal, (stok_barang.stok_awal - SUM(stok_barang.terjual)) AS stok_akhir, stok_barang.id_menu, stok_barang.created_at, menu.id_menu, menu.nama_menu, stok_barang.shift FROM stok_barang INNER JOIN menu ON stok_barang.id_menu = menu.id_menu WHERE date_now = date(?) AND stok_barang.shift = ? GROUP BY menu.nama_menu, stok_barang.shift",
+                    'all',
+                    [date_now, shift_lower]).then((result) => {
+                    if (result.length != 0) {
+                        ipcRenderer.invoke('printTransaksiStok', date_now, shift_tipe).then(
+                            (result) => {
+                                console.log("done")
+                            })
+                    } else {
+                        Swal.fire({
+                            title: "Error",
+                            text: "Data pada tanggal " + date_now + " tidak ada",
+                            icon: "error",
+                            confirmButtonText: "Oke",
+                        })
+                    }
+                })
+
+            } catch (error) {
+                Swal.fire({
+                    title: "Error",
+                    text: error,
+                    icon: "error",
+                    confirmButtonText: "Oke",
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        document.location.reload()
+                    }
+                })
+
+            }
+        }
+    })
+</script>
+
+</html>

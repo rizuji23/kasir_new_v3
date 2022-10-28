@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Timer</title>
+</head>
+
+<body>
+    <h1>Testing Timer</h1>
+    <ul>
+        <li>
+            <span>Table 01</span> = <input type="number" id="table001" placeholder="jam"> <button
+                id="start01">Start</button>
+            <button id="stop01">Stop</button>
+            <button id="addon01">Addon</button>
+            <br>
+            <p>Timer: <span id="timer01"></span></p>
+        </li>
+        <li>
+            <span>Table 02</span> = <input type="number" id="table002" placeholder="jam"> <button
+                id="start02">Start</button>
+            <button id="stop02">Stop</button>
+            <button id="addon02">Addon</button>
+
+            <br>
+            <p>Timer: <span id="timer02"></span></p>
+        </li>
+        <li>
+            <span>Table 03</span> = <input type="number" id="table003" placeholder="jam"> <button
+                id="start03">Start</button>
+            <button id="stop03">Stop</button>
+            <button id="addon02">Addon</button>
+
+            <br>
+            <p>Timer: <span id="timer03"></span></p>
+        </li>
+    </ul>
+    <script>
+        if (typeof module === 'object') {
+            window.module = module;
+            module = undefined;
+        }
+    </script>
+    <script>
+        var exports = {
+            "__esModule": true
+        };
+    </script>
+    <script>
+        if (window.module) module = window.module;
+    </script>
+
+    <script src="../dist/renderer.js"></script>
+
+</body>
+
+</html>

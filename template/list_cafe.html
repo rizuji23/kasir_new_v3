@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Transaksi | Cozypool Kasir</title>
+    <link rel="stylesheet" href="../public/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/assets/css/style.css">
+    <link rel="stylesheet" href="../public/assets/css/boxicons.min.css">
+    <link rel="stylesheet" href="../public/assets/css/dataTables.bootstrap5.min.css">
+
+</head>
+
+<body id="body-pd" class="body-pd">
+    <div class="overlay">
+        <div class="overlay__inner">
+            <div class="overlay__content text-center"><img src="../public/assets/img/logo-login.png" alt=""></span>
+                <h3>Tunggu sebentar, menyiapkan table...</h3>
+            </div>
+
+        </div>
+    </div>
+    <header class="header body-pd" id="header">
+        <div class="header-phone">
+            <img src="../public/assets/img/logo.png" alt="">
+        </div>
+        <div class="header_img" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <img src="../public/assets/img/user.png" alt="">
+            <p class="header-name">Aye Shabira</p>
+        </div>
+    </header>
+    <div class="l-navbar show-sidebar" id="nav-bar">
+        <nav class="nav">
+            <div>
+                <a href="#" class="nav_logo">
+                    <span class="nav_logo-name"><img src="../public/assets/img/logo.png" alt=""></span>
+                </a>
+                <div class="nav_list">
+                    <a href="home.html" class="nav_link active" title="Home">
+                        <i class='bx bx-home-alt nav_icon'></i>
+                        <span class="nav_name">Home</span>
+                    </a>
+                    <a href="waiting_list.html" class="nav_link" title="Waiting List">
+                        <i class='bx bx-list-plus nav_icon'></i>
+                        <span class="nav_name">Waiting List</span>
+                    </a>
+                    <a href="add_member.html" class="nav_link" title="Add Member">
+                        <i class='bx bx-user-plus nav_icon'></i>
+                        <span class="nav_name">Add Member</span>
+                    </a>
+
+                    <a href="menu.html" class="nav_link" title="Menu Makanan">
+                        <i class='bx bx-bowl-rice nav_icon'></i>
+                        <span class="nav_name">Menu Makanan</span>
+                    </a>
+                    <a href="menu_cafe.html" class="nav_link" title="Menu Cafe">
+                        <i class='bx bx-baguette nav_icon'></i>
+                        <span class="nav_name">Menu Cafe</span>
+                    </a>
+                    <a href="manual.html" class="nav_link" title="Manual">
+                        <i class='bx bx-desktop nav_icon'></i>
+                        <span class="nav_name">Manual Lampu</span>
+                    </a>
+
+                    <a href="pengaturan.html" class="nav_link" title="Pengaturan">
+                        <i class='bx bx-cog nav_icon'></i>
+                        <span class="nav_name">Pengaturan</span>
+                    </a>
+                </div>
+            </div>
+            <a href="javascript:void(0)" class="nav_link" title="Logout" id="logout-side">
+                <i class='bx bx-log-out nav_icon'></i>
+                <span class="nav_name">Logout</span>
+            </a>
+        </nav>
+    </div>
+
+    <!-- <nav class="navbar fixed-bottom bg-dark navbar-mobile">
+        <div class="container-fluid">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item text-center">
+                    <a href="home.html" class="nav-bottom-link active-2" title="Home">
+                        <i class='bx bx-home-alt nav_icon'></i>
+                        <p class="nav_name_bottom">Home</p>
+                    </a>
+                </li>
+                <li class="nav-item text-center">
+                    <a href="keuangan.html" class="nav-bottom-link" title="Keuangan">
+                        <i class='bx bx-archive nav_icon'></i>
+                        <p class="nav_name_bottom">Keuangan</p>
+                    </a>
+                </li>
+                <li class="nav-item text-center">
+                    <a href="report.html" class="nav-bottom-link" title="Report">
+                        <i class='bx bx-chart nav_icon'></i>
+                        <p class="nav_name_bottom">Report</p>
+                    </a>
+                </li>
+                <li class="nav-item text-center" style="padding-right: 54px !important;">
+                    <a href="settings.html" class="nav-bottom-link" title="Settings">
+                        <i class='bx bx-brightness nav_icon'></i>
+                        <p class="nav_name_bottom">Settings</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav> -->
+
+    <!--Container Main start-->
+    <div class="box-bg">
+        <div class="overview-pemb mb-1">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="d-flex mb-2">
+                        <div class="p-1">
+                            <a href="home.html"
+                                class="btn btn-primary btn-primary-cozy-dark btn-home-top border-r-13 pl-20 pr-20 pt-10 pb-10">Home</a>
+                        </div>
+
+                        <div class="p-1">
+                            <a href="list_member.html"
+                                class="btn btn-primary btn-primary-cozy-dark btn-home-top border-r-13 pl-20 pr-20 pt-10 pb-10">List
+                                Member</a>
+                        </div>
+
+                        <div class="p-1">
+                            <a href="list_transaksi.html"
+                                class="btn btn-primary btn-primary-cozy btn-home-top border-r-13 pl-20 pr-20 pt-10 pb-10">List
+                                Transaksi</a>
+                        </div>
+
+                        <div class="p-1">
+                            <a href="list_transaksi_shift.html"
+                                class="btn btn-primary btn-primary-cozy-dark btn-home-top border-r-13 pl-20 pr-20 pt-10 pb-10">List
+                                Transaksi Shift</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="d-flex mb-2 float-end">
+                        <div class="p-1">
+                            <a href="javascript:void(0)"
+                                class="btn btn-primary btn-primary-cozy border-r-13 pl-20 pr-20 pt-10 pb-10"
+                                id="refresh_page"><img src="../public/assets/img/icon/refresh-ccw.png" alt=""></a>
+                        </div>
+                        <div class="p-1">
+                            <a href="javascript:void(0)"
+                                class="btn btn-primary btn-primary-cozy border-r-13 pl-20 pr-20 pt-10 pb-10"
+                                data-bs-toggle="modal" data-bs-target="#print_transaksi_modal">Print
+                                Transaksi</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hr-white"></div>
+        <div class="d-flex mb-2">
+            <div class="p-1">
+                <a href="list_transaksi.html"
+                    class="btn btn-primary btn-primary-cozy-dark btn-home-top border-r-13 pl-20 pr-20 pt-10 pb-10">
+                    Transaksi Billing</a>
+            </div>
+
+            <div class="p-1">
+                <a href="list_cafe.html"
+                    class="btn btn-primary btn-primary-cozy btn-home-top border-r-13 pl-20 pr-20 pt-10 pb-10">
+                    Transaksi Cafe</a>
+            </div>
+
+            <div class="p-1">
+                <a href="list_stok_cafe.html"
+                    class="btn btn-primary btn-primary-cozy-dark btn-home-top border-r-13 pl-20 pr-20 pt-10 pb-10">
+                    Cafe Stok</a>
+            </div>
+
+            <div class="p-1">
+                <a href="list_stok_masuk.html"
+                    class="btn btn-primary btn-primary-cozy-dark btn-home-top border-r-13 pl-20 pr-20 pt-10 pb-10">
+                    Stok Masuk</a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm">
+                <div class="card card-custom">
+                    <div class="card-body">
+                        <div class="title-pemb">
+                            <h4>Total cafe hari ini:</h4>
+                            <h4>Rp. <span id="total_hari_cafe"></span></h4>
+                            <p id="date_locale_cafe"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card card-custom" style="background-color: #1A1B1F !important;">
+                    <div class="card-body">
+                        <div class="title-pemb">
+                            <h4>Total cafe bulan ini:</h4>
+                            <h4>Rp. <span id="total_bulan_cafe"></span></h4>
+                            <p id="date_locale_bulan_cafe"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="keuangan-list mt-2 mb-5">
+            <div class="card card-custom-dark">
+                <div class="card-header">
+                    <div class="d-flex">
+                        <div class="p-2 w-100">
+                            <h4>List Cafe Semua</h4>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table id="cafe-table" class="table" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th style="width: 20px;">No</th>
+                                    <th>Order ID</th>
+                                    <th>Nama</th>
+                                    <th>Total</th>
+                                    <th>Tanggal</th>
+                                    <th>Opsi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Container Main end-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Profile</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">Logout</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="detailCafe" tabindex="-1" aria-labelledby="detailCafeLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="detailCafeLabel">Detail Transaksi</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-group" id="detail_member"></ul>
+                    <ul class="list-group mt-3" id="detail_transaksi_list">
+                        <li class="list-group-item"><small>List Transaksi</small> <br>
+                            <ul>
+                                <div id="list_billing_t"></div>
+                                <div class="list_menu_t"></div>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="print_transaksi_modal" tabindex="-1" aria-labelledby="print_transaksi_modalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="print_transaksi_modalLabel">Print Transaksi</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mt-2">
+                        <label for="">Tanggal</label>
+                        <input type="date" class="form-control custom-input mt-2" id="tanggal_print_transaksi">
+                    </div>
+                    <div class="mt-2">
+                        <label for="">Shift</label>
+                        <select name="" class="form-control custom-input mt-2" id="shift_type">
+                            <option value="Siang">Siang</option>
+                            <option value="Malam">Malam</option>
+                        </select>
+                    </div>
+                    <div class="mt-2">
+                        <label for="">Tipe Print</label>
+                        <select name="" class="form-control custom-input mt-2" id="tipe_print">
+                            <option value="PDF">PDF</option>
+                            <!-- <option value="Struk">Struk</option> -->
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-primary-cozy-dark"
+                        data-bs-dismiss="modal">Batal</button>
+                    <button type="button" class="btn btn-primary btn-primary-cozy"
+                        id="print_transaksi_btn">Print</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    if (typeof module === 'object') {
+        window.module = module;
+        module = undefined;
+    }
+</script>
+<script src="../public/assets/js/jquery-3.6.0.min.js"></script>
+<script src="../public/assets/js/popper.min.js"></script>
+<script src="../public/assets/js/bootstrap.min.js"></script>
+<script src="../public/assets/js/scripts.js"></script>
+<script src="../public/assets/js/jquery.dataTables.min.js"></script>
+<script src="../public/assets/js/dataTables.bootstrap5.min.js"></script>
+
+<script>
+    if (window.module) module = window.module;
+</script>
+<script src="../renderer.js"></script>
+<script>
+    var t_cafe = $('#cafe-table').DataTable();
+    const date = new Date();
+
+    try {
+        const date_now = new Date().toLocaleDateString();
+        var sum_all = 0
+        console.log(date_now)
+        ipcRenderer.invoke('executeQuery', "SELECT * FROM struk WHERE status_struk = ? AND nama_customer = 'Cafe'",
+                "all", [
+                    'terbayar'
+                ])
+            .then((result) => {
+                console.log(result)
+                result.forEach((row) => {
+                    const date = new Date(row[10]).toLocaleDateString();
+                    if (date_now == date) {
+                        sum_all += parseInt(row[5])
+                    }
+                })
+                $('#total_hari_cafe').text(formatRupiah(sum_all))
+                $('#date_locale_cafe').text(date_now)
+            })
+    } catch (error) {
+        console.log(error);
+    }
+
+    try {
+        var sum_all_bulan = 0
+        const date_month = parseInt(new Date().getMonth().toString()) + 1
+        const date_year = new Date().getFullYear()
+        ipcRenderer.invoke('executeQuery', "SELECT * FROM struk WHERE status_struk = ? AND nama_customer = 'Cafe'",
+                "all", [
+                    'terbayar'
+                ])
+            .then((result) => {
+                console.log(result)
+                result.forEach((row) => {
+                    const date_new_month = parseInt(new Date(row[10]).getMonth()) + 1
+                    const date_new_year = new Date(row[10]).getFullYear();
+                    const dt = `${date_month}-${date_year}`
+                    const dt_db = `${date_new_month}-${date_new_year}`
+                    console.log(dt)
+                    console.log(dt_db)
+                    if (dt === dt_db) {
+                        sum_all_bulan += parseInt(row[5])
+                    }
+                })
+                $('#total_bulan_cafe').text(formatRupiah(sum_all_bulan))
+                $('#date_locale_bulan_cafe').text("Bulan ke " + date_month)
+            })
+    } catch (error) {
+        console.log(error)
+    }
+
+    ipcRenderer.invoke('executeQuery',
+        "SELECT * FROM struk LEFT OUTER JOIN booking ON struk.id_booking = booking.id_booking LEFT OUTER JOIN table_billiard ON booking.id_table = table_billiard.id_table LEFT OUTER JOIN pesanan ON struk.id_pesanan = pesanan.id_pesanan WHERE status_struk = 'terbayar' AND nama_customer == 'Cafe' ORDER BY struk.id DESC",
+        "all",
+        []).then((result) => {
+        let i = 1;
+        var html = ``;
+        console.log(result)
+        result.forEach((row) => t_cafe.row.add([
+            i++,
+            row[1],
+            `${row[4]}`,
+            `Rp. ` + formatRupiah(row[5]),
+            `${new Date(row[9]).toLocaleDateString('es-CL')}`,
+            `<button class="btn btn-primary btn-primary-cozy btn-sm" onclick="detailCafe('` + row[
+                1] +
+            `', '${row[3]}')">Detail</button>`
+        ]).draw(false))
+    })
+
+    function detailCafe(id_struk, id_booking) {
+        $("#list_billing_t").empty()
+        $(".list_menu_t").empty()
+        try {
+            ipcRenderer.invoke('executeQuery', "SELECT * FROM struk WHERE id_struk = ?", 1, [id_struk]).then((
+                result) => {
+                console.log(result)
+                const date = new Date(result[0][10]);
+                const data = `<li class="list-group-item"><small>Order ID</small> <br>` + result[0][1] + `</li>
+                        <li class="list-group-item"><small>Nama</small> <br>` + result[0][4] + `</li>
+                        <li class="list-group-item"><small>Total</small> <br>Rp. ` + formatRupiah(result[0][5]) +
+                    `</li>
+                    <li class="list-group-item"><small>Cash</small> <br>Rp. ` + formatRupiah(result[0][6]) +
+                    `</li>
+                    <li class="list-group-item"><small>Kembalian</small> <br>Rp. ` + formatRupiah(result[0][7]) +
+                    `</li>
+                        <li class="list-group-item"><small>Tanggal Pembuatan</small> <br>` + date
+                    .toLocaleDateString('es-CL') + `</li>
+                    <li class="list-group-item"><small>Jam</small> <br>${new Date(result[0][10])
+                    .toLocaleTimeString('en-US', { hour12: false, hour: '2-digit', minute: '2-digit' })} - ${new Date(result[0][9])
+                    .toLocaleTimeString('en-US', { hour12: false, hour: '2-digit', minute: '2-digit' })}</li>`
+
+
+                $('#detail_member').html(data);
+                $('#detailCafe').modal('show')
+
+                ipcRenderer.invoke("executeQuery",
+                    "SELECT * FROM struk INNER JOIN booking ON struk.id_booking = booking.id_booking WHERE struk.id_struk = ?",
+                    1, [id_struk]).then((result) => {
+                    console.log(result)
+                    if (result.length == 0) {
+
+                    } else {
+                        const data = ` <li> Billing Biliard(` +
+                            result[0][16] +
+                            `
+                    Jam @ ` +
+                            formatRupiah(result[0][17] / result[0][16]) +
+                            `) => Rp.
+                ` +
+                            formatRupiah(result[0][17]) +
+                            ` </li>`
+                        console.log(data)
+                        $("#list_billing_t").append(data);
+                    }
+                })
+
+                ipcRenderer.invoke("executeQuery",
+                    "SELECT * FROM pesanan LEFT OUTER JOIN cart ON cart.id_pesanan = pesanan.id_pesanan LEFT OUTER JOIN menu ON menu.id_menu = cart.id_menu WHERE pesanan.id_pesanan = ?",
+                    'all', [id_booking]).then((result) => {
+                    result.forEach((row) => {
+                        const data =
+                            `<li>` +
+                            row[21] +
+                            ` (` +
+                            row[13] +
+                            ` @` +
+                            formatRupiah(row[22]) +
+                            `) => Rp. ` +
+                            formatRupiah(row[14]) +
+                            `</li>`;
+                        $(".list_menu_t").append(data);
+                    });
+                })
+            })
+        } catch (error) {
+            console.log(error);
+        }
+
+    }
+
+    $("#print_transaksi_btn").click(() => {
+        const tanggal = $("#tanggal_print_transaksi").val()
+        const tanggal_convert = new Date(tanggal);
+        const tipe_print = $("#tipe_print").val();
+        const shift_type = $("#shift_type").val();
+
+        if (tanggal == "" | tipe_print == "") {
+
+        } else {
+            if (tipe_print == "PDF") {
+                if (shift_type == "Siang") {
+                    try {
+                        ipcRenderer.invoke("executeQuery",
+                            "SELECT * FROM struk WHERE status_struk = ? AND nama_customer = ?", 'all', [
+                                'terbayar', 'Cafe'
+                            ]).then((result) => {
+                            const arr_data = [];
+                            result.forEach((row) => {
+                                const date_db = new Date(row[10])
+                                    .toLocaleDateString().toString()
+                                console.log(date_db)
+                                if (date_db != tanggal_convert.toLocaleDateString()
+                                    .toString()) {
+
+                                } else {
+                                    arr_data.push(row[10]);
+                                }
+                            })
+
+                            if (arr_data.length == 0) {
+                                Swal.fire({
+                                    title: "Not Found",
+                                    text: "Data pada tanggal " + tanggal + " tidak ada",
+                                    icon: "error",
+                                    confirmButtonText: "Oke",
+                                })
+                            } else {
+                                ipcRenderer.invoke('printTransaksiCafe', tanggal_convert
+                                    .toLocaleDateString(), "Siang").then(
+                                    (result) => {
+                                        console.log("done")
+                                    })
+                            }
+
+                        })
+                    } catch (error) {
+                        Swal.fire({
+                            title: "Error",
+                            text: error,
+                            icon: "error",
+                            confirmButtonText: "Oke",
+                        }).then((result) => {
+                            if (result.isConfirmed) {
+                                document.location.reload()
+                            }
+                        })
+                    }
+                } else if (shift_type == "Malam") {
+
+                }
+            } else if (tipe_print == "Struk") {
+
+            }
+        }
+    })
+</script>
+
+</html>
